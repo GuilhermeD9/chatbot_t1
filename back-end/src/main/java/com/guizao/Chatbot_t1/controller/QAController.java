@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/qa") //Caminho da aplicação web
+@CrossOrigin(origins = "http://localhost:3000")//URL FRONTEND
 public class QAController {
     @Autowired
     private QAService service;

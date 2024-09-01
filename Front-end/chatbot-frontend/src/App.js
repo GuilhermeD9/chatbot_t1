@@ -8,7 +8,7 @@ const App = () => {
 
     useEffect(() => {
         // Fetch questions and answers from API
-        axios.get('http://localhost:8080/qa')
+        axios.get('http://localhost:8080/api/qa')
             .then(response => {
                 setQaList(response.data);
             })
@@ -22,7 +22,7 @@ const App = () => {
         const newQa = { question, answer };
         
         // Post new question and answer to the API
-        axios.post('http://localhost:8080/qa', newQa)
+        axios.post('http://localhost:8080/api/qa', newQa)
             .then(response => {
                 setQaList([...qaList, response.data]);
                 setQuestion('');
