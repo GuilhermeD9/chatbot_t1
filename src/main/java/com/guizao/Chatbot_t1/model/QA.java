@@ -1,4 +1,6 @@
 package com.guizao.Chatbot_t1.model;
+//QA = (QUESTIONS AND ANSWERS)
+//ESSA CLASSE DEFINE AS PROPRIEDADES QUE SERÃO INSERIDAS NO BD
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,12 +9,13 @@ import jakarta.persistence.Id;
 
 @Entity
 public class QA {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id //Declaração ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Gerar valor auto
     private Long id;
     private String question;
     private String answer;
 
+    //Constructos, Getters & Setters
     public QA() {}
 
     public QA(String question, String answer) {

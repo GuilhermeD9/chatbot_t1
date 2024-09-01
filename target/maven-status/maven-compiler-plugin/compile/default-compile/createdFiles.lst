@@ -1,0 +1,5 @@
+com\guizao\Chatbot_t1\repository\QARepository.class
+com\guizao\Chatbot_t1\service\QAService.class
+com\guizao\Chatbot_t1\model\QA.class
+com\guizao\Chatbot_t1\ChatbotT1Application.class
+com\guizao\Chatbot_t1\controller\QAController.class
