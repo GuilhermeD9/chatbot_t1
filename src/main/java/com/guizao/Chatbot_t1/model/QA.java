@@ -1,4 +1,4 @@
-package com.guizao.Chatbot_t1.entity;
+package com.guizao.Chatbot_t1.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
